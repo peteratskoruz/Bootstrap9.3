@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap-Popover</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/fontAwesome.css" type="text/css" rel="stylesheet">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-------left nav bar------------>
+
+    <div class="navbar navbar-inverse navbar-fixed-left">
+        <a class="navbar-brand" href="#">Brand</a>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+        </ul>
+    </div>
+
+  <!--  <h3>
+        Side Navbar For mobile Screens
+    </h3>-->
+
+    <button class="navbar-toggler navbar-toggler-righ menu" type="button">
+        Menu <i class="fa fa-bars"></i>
+    </button>
+
+    <section>
+        <h3>
+            Left Navbar
+        </h3>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    </section>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        if($( window ).width()<=300){
+           $('.menu').on("click",function () {
+              $('.navbar-fixed-left').toggleClass('open');
+           })
+        }
+
+    })
+</script>
+</body>
+</html>

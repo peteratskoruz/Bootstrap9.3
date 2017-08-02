@@ -1,0 +1,21 @@
+
+.navbar-fixed-left { width: 200px; position: fixed; border-radius: 0; height: 100%;opacity: 0;visibility: hidden; left: -100%;padding: 10px;transition: 0.3s;-webkit-transition: 0.3s;
+-moz-transition: 0.3s;-o-transition: 0.3s;}
+
+.navbar-fixed-left .navbar-nav > li { float: none;  /* Cancel default li float: left */ width: 139px; }
+
+.navbar-fixed-left + .container { padding-left: 160px; }
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu { margin-top: -50px; margin-left: 140px; }
+
+.menu{margin-top: 15px;float: right;display: none;}
+
+section{padding-top: 100px;}
+
+@media (max-width:300px) {
+    .menu{display: block;}
+
+    .navbar-fixed-left.open{left: 0;opacity: 1;visibility: visible;}
+
+}
